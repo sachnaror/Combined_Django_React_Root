@@ -43,7 +43,7 @@ This project is a web application that combines a Django backend with a React fr
 
 ### Clone the Repository
 
-git clone https://github.com/yourusername/Combined_Django_React_Root.git
+git clone https://github.com/sachnaror/Combined_Django_React_Root.git
 
 cd Combined_Django_React_Root
 
@@ -93,4 +93,4 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 
 ## Contact
 
-For any queries, you can reach out to [your_email@example.com].
+For any queries, you can reach out to [schnaror@gmail.com].
