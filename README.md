@@ -1,5 +1,10 @@
 # Combined Django React Root
 
+
+![alt text](image.png "Image Description")
+
+
+
 ## Description
 
 This project is a web application that combines a Django backend with a React frontend. The Django application serves as the backend API, managing data and providing endpoints for the React frontend to interact with. The application is designed to manage a collection of books, allowing users to view, add, and authenticate against the book records.
