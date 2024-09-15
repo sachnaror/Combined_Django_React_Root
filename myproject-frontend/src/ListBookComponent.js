@@ -1,20 +1,17 @@
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 axios.defaults.withCredentials = true;
 function ListBookComponent() {
     const [bookList, setBookList] = useState([]);
-    useEffect(() => {
-        fetchData();
-    }, []);
     const apiURL = "http://127.0.0.1:8000/api/listbooks/";
-    const fetchData = async () => {
-        const response = await axios.get(apiURL,
-            { 'withCredentials': true });
-        console.log(response)
+    const fetchData = useCallback(async () => { // {{ edit_1 }}
+        const response = await axios.get(apiURL, { 'withCredentials': true });
+        console.log(response);
         setBookList(response.data);
-        console.log(bookList);
-        console.log(response.data);
-    }
+    }, [apiURL]); // {{ edit_2 }}
+    useEffect(() => {
+        fetchData(); // Call the fetchData function
+    }, [fetchData]); // {{ edit_3 }}
     return (
         <div className="main-section">
             <h1>All Books</h1>
