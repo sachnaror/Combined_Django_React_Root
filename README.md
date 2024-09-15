@@ -1,8 +1,7 @@
 # Combined Django React Root
 
 
-![alt text](image.png "Image Description"){ width="400" }
-
+<img src="image.png" alt="Image Description" width="350" height="350" />
 
 
 ## Description
